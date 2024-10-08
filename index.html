@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego con Anuncios Recompensados</title>
+    <!-- Script de AdMob para anuncios recompensados -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        // Configuración de anuncios recompensados de prueba
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3940256099942544", // ID de cliente para anuncios de prueba
+            enable_page_level_ads: true
+        });
+
+        // Función para simular la recompensa
+        function mostrarAnuncioRecompensado() {
+            alert("Cargando anuncio recompensado de prueba...");
+            setTimeout(() => {
+                alert("¡Felicidades! Has ganado 10 diamantes.");
+                let diamantes = 10;
+                console.log('Recompensa de ' + diamantes + ' diamantes otorgada.');
+            }, 5000);  // Simula la duración del anuncio de 5 segundos
+        }
+    </script>
+</head>
+<body>
+    <h1>Juego con Anuncios Recompensados</h1>
+    <button onclick="mostrarAnuncioRecompensado()">Ver anuncio y ganar diamantes</button>
+</body>
+</html>
